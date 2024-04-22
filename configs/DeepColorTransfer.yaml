@@ -11,14 +11,16 @@ optimizer_args:
   loss_lambda0: 0.5
   loss_lambda1: 10 # 1.5
   loss_lambda2: 10 # 0.5
-  learning_rate: 0.00005
+  learning_rate: 0.5
   beta1: 0.5
   beta2: 0.999
 
 trainer_args:
   accelerator: gpu
-  devices: 7
-  max_epochs: 100
+  #devices 7 to 1
+  devices: 1
+  #max epoch 100 to 10
+  max_epochs: 1
   precision: 16 # 32 or 16
   ckpt_dir: output/lightning_ckpt
 
@@ -30,5 +32,6 @@ dataset_args:
   ab_bin: 64
   num_classes: 150
 
-  batch_size: 6
-  num_workers: 8
+#batch size 6 to 2 , num workers 8 to 1
+  batch_size: 1
+  num_workers: 1

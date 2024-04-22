@@ -119,3 +119,8 @@ python src/train_distill.py --config PATH_TO_CONFIG --teacher-weights PATH_TO_TE
 **Weipeng Zhang:** code, dataset preparation, model training, presentation, report, website.
 
 **Yubing Gou:** dataset preparation, model testing and analysis, report.
+
+
+
+**important**
+(test_env2) sg95@SGPC:/mnt/d/MTECH/CV/project/Deep-Color-Transfer$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/wsl/lib/

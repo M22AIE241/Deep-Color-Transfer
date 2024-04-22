@@ -6,6 +6,7 @@ from box import Box
 import sys
 import warnings
 import argparse
+torch.cuda.empty_cache()
 
 sys.path.append("./")
 warnings.filterwarnings("ignore")
